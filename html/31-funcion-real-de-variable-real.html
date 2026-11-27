@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mwur7zs2-w9q6cvgao">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.6">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="exe-pass-score" content="5">
+<title>3.1. Función real de variable real | Análisis I</title>
+<link rel="icon" type="image/x-icon" href="../theme/img/favicon.ico">
+<meta name="description" content="Curso 1º - Enseñanza Bachillerato
+Nombre asignatura/materia: Matemáticas I">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mwur7zs2-w9q6cvgao" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Análisis I: Introducción y repaso al concepto de función</a>
+</li>
+<li> <a href="../html/1-introduccion.html" class="no-ch">1. Introducción</a>
+</li>
+<li> <a href="../html/2-variables.html" class="daddy">2. Variables</a>
+<ul class="other-section">
+<li> <a href="../html/21-ejes-cartesianos-y-coordenadas-de-un-punto.html" class="no-ch">2.1. Ejes cartesianos y coordenadas de un punto</a>
+</li>
+<li> <a href="../html/22-variable-dependiente-e-independiente.html" class="no-ch">2.2. Variable dependiente e independiente</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/3-funcion.html" class="daddy">3. Función</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/31-funcion-real-de-variable-real.html" class="active no-ch">3.1. Función real de variable real</a>
+</li>
+<li> <a href="../html/32-dominio-y-recorrido.html" class="no-ch">3.2. Dominio y recorrido</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mwur7zs2-w9q6cvgao" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Análisis I</p>
+<p class="package-subtitle">Introducción y repaso al concepto de función</p></div>
+<div class="page-header"><h1 class="page-title">3.1. Función real de variable real</h1></div>
+</header><div id="page-content-page-mwur7zs2-w9q6cvgao" class="page-content">
+<article id="block-mwur7zs3-jdh6i42ww" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mwur7zs3-zci16hxzq" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mwur7zs3-zci16hxzq&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">En el blog de el diario El País, <strong>ecolab</strong>, que se comenta en el apartado anterior, se decía que el consumo de gasolina en un automóvil es <strong>proporcional al cuadrado</strong> de la velocidad a la que se desplaza. En otro blog, <strong>Eficiencia Energética</strong>, hay publicado un artículo dedicado a este mismo tema: <a href="http://eficiencia-e.blogspot.com/2010/07/eco-conduccion-ii-claves-para-una.html" target="_blank" rel="noopener">Eco-conducción, claves para una conducción más económica y ecológica</a>.</p>
+<p style="text-align: justify;">En él, aparece una gráfica que expresa la relación que existe entre estas dos variables: velocidad y consumo de combustible. Aunque existen otros factores a tener en cuenta además de la velocidad, peso del vehículo, marcha a la que se circula, diseño aerodinámico, modelo del automóvil; la forma de la gráfica es muy similar.</p>
+<p><img src="../content/resources/Gráfica de consumo y velocidad.jpg" height="53" width="25%" style="text-align: start; display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">Evidentemente, esa gráfica expresa una relación funcional, o <strong>función, </strong>entre dos variables: velocidad en km/h y litros consumidos a esa velocidad en \(100 \ km\). Mirando con detenimiento la gráfica, podemos saber aproximadamente cuántos litros se consumen a una determinada velocidad. Pero, podemos saber el valor <strong>exacto </strong>del consumo cuando se circula a \(60 \  km/h\)? ¿\(6,3\) ó \(6,2\) litros?</p>
+<p style="text-align: justify;">Hemos visto que las relaciones funcionales las podemos expresar mediante gráficas, tablas o enunciados, pero la forma más común de hacerlo es mediante fórmulas o expresiones analíticas. Por ejemplo, La función de la gráfica se expresa mediante la siguiente fórmula: \[y=0.001·\left(x-40\right)^2+6\]</p>
+<p style="text-align: justify;">En esa fórmula, \(\boldsymbol{x}\) representa la variable independiente, es decir, la velocidad en \(km/h\); e \(\boldsymbol{y}\) representa la variable dependiente, los litros consumidos en \(100 \ km\).</p>
+<p> </p>
+</div>
+</div>
+</div>
+</article><article id="block-mwur7zs3-h22ydwutp" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mwur7zs3-rkyssgtjl" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mwur7zs3-rkyssgtjl&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;passScoreMode&quot;:&quot;global&quot;,&quot;passScoreCustom&quot;:5,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgPassScore&quot;:&quot;Puntuación mínima necesaria para aprobar esta actividad: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-mwur7zs3-rkyssgtjl&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Teniendo en cuenta la fórmula anterior, realiza los cálculos correspondientes y completa la siguiente tabla.&lt;br /&gt;&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1795554689074-SYYGD&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;div style=\&quot;border: 2px solid #7a297b; border-radius: 15px; overflow: hidden; margin: 20px auto; width: 55%; min-width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);\&quot;&gt;\n&lt;table style=\&quot;width: 100%; border-collapse: collapse; font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; text-align: center;\&quot;&gt;\n&lt;thead&gt;\n&lt;tr style=\&quot;background-color: #7a297b; color: #ffffff;\&quot;&gt;\n&lt;th style=\&quot;padding: 15px; border-right: 1px solid #ffffff; width: 45%;\&quot;&gt;&lt;em&gt;x&lt;/em&gt;, km/h de velocidad&lt;/th&gt;\n&lt;th style=\&quot;padding: 15px; width: 55%;\&quot;&gt;&lt;em&gt;y&lt;/em&gt;, litros de consumo a los 100 km&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody style=\&quot;color: #333333;\&quot;&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; font-weight: bold;\&quot;&gt;40&lt;/td&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; background-color: #f9f2f9; color: #7a297b; font-style: italic;\&quot;&gt;&lt;u&gt;6&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; background-color: #f9f2f9; color: #7a297b; font-style: italic;\&quot;&gt;&lt;u&gt;50&lt;/u&gt;&lt;/td&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; font-weight: bold;\&quot;&gt;6,1&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; font-weight: bold;\&quot;&gt;60&lt;/td&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; background-color: #f9f2f9; color: #7a297b; font-style: italic;\&quot;&gt;&lt;u&gt;6,4&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; background-color: #f9f2f9; color: #7a297b; font-style: italic;\&quot;&gt;&lt;u&gt;80&lt;/u&gt;&lt;/td&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; font-weight: bold;\&quot;&gt;7,6&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; font-weight: bold;\&quot;&gt;100&lt;/td&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; background-color: #f9f2f9; color: #7a297b; font-style: italic;\&quot;&gt;&lt;u&gt;9,6&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; font-weight: bold;\&quot;&gt;120&lt;/td&gt;\n&lt;td style=\&quot;padding: 12px; border: 1px solid #7a297b; background-color: #f9f2f9; color: #7a297b; font-style: italic;\&quot;&gt;&lt;u&gt;12,4&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/div&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&lt;p&gt;💡 Recuerda que, en este ejercicio, la coma decimal la escribimos con \&quot;,\&quot;.&lt;/p&gt;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-mwur7zs3-rkyssgtjl" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mwur7zs3-rkyssgtjl" class="form-IDevice" data-id="idevice-mwur7zs3-rkyssgtjl">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Teniendo en cuenta la fórmula anterior, realiza los cálculos correspondientes y completa la siguiente tabla.<br /></p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mwur7zs3-rkyssgtjl">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mwur7zs3-rkyssgtjl" style="display:none;">
+                      <button  id="frmStartGame-idevice-mwur7zs3-rkyssgtjl" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mwur7zs3-rkyssgtjl" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mwur7zs3-rkyssgtjl" > </div>
+                        <div id="frmCover-idevice-mwur7zs3-rkyssgtjl" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mwur7zs3-rkyssgtjl" class="form-results-container inline">
+                        <div id="form-score-idevice-mwur7zs3-rkyssgtjl" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mwur7zs3-rkyssgtjl" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mwur7zs3-rkyssgtjl" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mwur7zs3-rkyssgtjl" />
+                        <input id="form-button-reset-idevice-mwur7zs3-rkyssgtjl" type="button" value="Reiniciar"
+                            data-id="idevice-mwur7zs3-rkyssgtjl" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mwur7zs3-rkyssgtjl" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mwur7zs3-rkyssgtjl" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                <div class="form-instructions"><p>💡 Recuerda que, en este ejercicio, la coma decimal la escribimos con ",".</p></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article><article id="block-mwur7zs3-4ep078d0a" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Función real de variable real</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mwur7zs3-vzlnpnfu4" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mwur7zs3-vzlnpnfu4&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>Se llama <strong><span style="color: #008000;">función real de variable real</span></strong> a una relación que asocia a un número <span style="color: #0000ff;">\(\boldsymbol{x}\)</span> de un <span style="color: #0000ff;"><strong>conjunto inicial</strong></span>, otro número <span style="color: #0000ff;">\(\boldsymbol{y}\)</span> de un <span style="color: #0000ff;"><strong>conjunto final</strong></span>.</p>
+<p>El <span style="text-decoration: underline;">número \(\boldsymbol{y}\)<strong> es único</strong></span>, es decir, a \(x\) no se le puede asociar más de un número.</p>
+<p>A las funciones se les suele llamar \(f\), y la relación se expresa de la siguiente manera: \(y = f(x)\).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">La relación que existe entre la velocidad y el combustible consumido es una función, pues a cada velocidad sólo le corresponde una única cantidad de litros consumidos. Dicha función la podemos escribir \[f(x)=0.001·\left(x-40\right)^2+6\] Y, por ejemplo, los litros que se gastan a los \(100 \  km\) si se circula a \(40 \ km/h\), se pueden expresar \(f(40)=6\).</p>
+</div>
+</div>
+</div>
+</article><article id="block-mwur7zs3-t1a1zv69x" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mwur7zs3-vljov30e7" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mwur7zs3-vljov30e7&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">Casi todos los ejemplos de relaciones que se han visto en el tema corresponden a funciones. Hagamos memoria: a cada hora del día le corresponde una única altura del mar, a cada segundo se le asocia un único pulso cardíaco, a cada altura de la piscina le corresponde una única cantidad de metros cúbicos en ella.</p>
+<p style="text-align: justify;">Sólo hay un caso de relación que no es funcional, el del ejemplo de los minutos jugados y puntos conseguidos por un jugador de baloncesto. Puede haber dos jugadores con el mismo tiempo de juego y distintas puntuaciones. Luego a \(x\)="tiempo jugado", no le corresponde una única \(y\)="puntos obtenidos".</p>
+</div>
+</div>
+</div>
+</article><article id="block-mwur7zs3-erdz36285" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mwur7zs3-vphx3su65" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mwur7zs3-vphx3su65&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;passScoreMode&quot;:&quot;global&quot;,&quot;passScoreCustom&quot;:5,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgPassScore&quot;:&quot;Puntuación mínima necesaria para aprobar esta actividad: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-mwur7zs3-vphx3su65&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;&lt;img src=\&quot;../content/resources/Piscina de piedra con agua turquesa.jpg\&quot; height=\&quot;19\&quot; width=\&quot;25%\&quot; style=\&quot;float: left; margin: 10px;\&quot; /&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;¿Recuerdas la empresa dedicada al abastecimiento y saneamiento de aguas? Seguro que sí. En la estación de depuración había tres piscinas. En un apartado anterior ya hablamos de la piscina 1, ahora vamos a centrar nuestra atención en la piscina 2. Esta piscina (imagen de la izquierda), mide 50 metros de largo, 10 de ancho y 5 de profundidad.&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;En la escena que aparece a continuación, se puede ver el frente de la piscina que tiene forma triangular. En la gráfica que le acompaña, se puede apreciar cómo varían &lt;strong&gt;los litros que hay en la piscina&lt;/strong&gt; (medidos en metros cúbicos) en función de &lt;strong&gt;la altura que tiene el agua&lt;/strong&gt; (medida en metros). Para iniciar el proceso de llenado debes hacer clic en el control inferior izquierdo de la escena. Este control también te permite detener el llenado en cualquier momento. &lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;&lt;iframe width=\&quot;766\&quot; height=\&quot;243\&quot; style=\&quot;border: 0px;\&quot; scrolling=\&quot;no\&quot; src=\&quot;https://www.geogebra.org/material/iframe/id/QC8aax7W/width/766/height/243/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto\&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;&lt;br /&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;Llamamos f a la función que relaciona la altura &lt;strong&gt;\\(\\boldsymbol{x}\\)&lt;/strong&gt; del agua de la piscina, con los metros cúbicos de agua \\(\\boldsymbol{y}\\) que tiene la piscina para esa altura. Nos preguntamos cuál de las expresiones siguientes corresponde a la fórmula de f.&lt;/p&gt;\n&lt;table border=\&quot;1\&quot; align=\&quot;left\&quot;&gt;&lt;/table&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1795604898020-5KSN6&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;div style=\&quot;border: 2px solid #7a297b; border-radius: 15px; overflow: hidden; margin: 20px auto; width: 35%; min-width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);\&quot;&gt;\n&lt;table style=\&quot;width: 100.071%; border-collapse: collapse; font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; text-align: center; height: 114.4px;\&quot;&gt;\n&lt;tbody style=\&quot;color: #333333;\&quot;&gt;\n&lt;tr style=\&quot;height: 32.8px;\&quot;&gt;\n&lt;td style=\&quot;height: 32.8px; background-color: #eccafa; text-align: left;\&quot;&gt;&lt;span style=\&quot;color: #843fa1;\&quot;&gt;&lt;strong&gt;  a)   \\(\\boldsymbol{f(x) = 150x -100}\\)&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr style=\&quot;height: 32.8px;\&quot;&gt;\n&lt;td style=\&quot;height: 32.8px; text-align: left;\&quot;&gt;&lt;span style=\&quot;color: #843fa1;\&quot;&gt;&lt;strong&gt;  b)   \\(\\boldsymbol{f(x) = 50x^2}\\)&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr style=\&quot;height: 32.8px;\&quot;&gt;\n&lt;td style=\&quot;height: 32.8px; background-color: #eccafa; text-align: left;\&quot;&gt;&lt;span style=\&quot;color: #843fa1;\&quot;&gt;&lt;strong&gt;  c)   \\(\\boldsymbol{f(x)= 50x}\\)&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/div&gt;\n&lt;p&gt;La fórmula de f corresponde al caso &lt;u&gt;b&lt;/u&gt; .&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&lt;p&gt;💡 Sustituye valores de \\(x\\) en la expresión, y comprueba si coinciden con los valores de \\(y\\) que van apareciendo en la escena.&lt;/p&gt;\n&lt;p&gt;Por ejemplo, para \\(x=1 \\implies y=50\\), es decir \\(f(1)=50\\).&lt;/p&gt;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-mwur7zs3-vphx3su65" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mwur7zs3-vphx3su65" class="form-IDevice" data-id="idevice-mwur7zs3-vphx3su65">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p style="text-align: justify;"><img src="../content/resources/Piscina de piedra con agua turquesa.jpg" height="19" width="25%" style="float: left; margin: 10px;" /></p>
+<p style="text-align: justify;">¿Recuerdas la empresa dedicada al abastecimiento y saneamiento de aguas? Seguro que sí. En la estación de depuración había tres piscinas. En un apartado anterior ya hablamos de la piscina 1, ahora vamos a centrar nuestra atención en la piscina 2. Esta piscina (imagen de la izquierda), mide 50 metros de largo, 10 de ancho y 5 de profundidad.</p>
+<p style="text-align: justify;">En la escena que aparece a continuación, se puede ver el frente de la piscina que tiene forma triangular. En la gráfica que le acompaña, se puede apreciar cómo varían <strong>los litros que hay en la piscina</strong> (medidos en metros cúbicos) en función de <strong>la altura que tiene el agua</strong> (medida en metros). Para iniciar el proceso de llenado debes hacer clic en el control inferior izquierdo de la escena. Este control también te permite detener el llenado en cualquier momento. </p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"></p>
+<p style="text-align: center;"><iframe width="766" height="243" style="border: 0px;" scrolling="no" src="https://www.geogebra.org/material/iframe/id/QC8aax7W/width/766/height/243/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"></iframe></p>
+<p style="text-align: center;"><br /></p>
+<p style="text-align: justify;">Llamamos f a la función que relaciona la altura <strong>\(\boldsymbol{x}\)</strong> del agua de la piscina, con los metros cúbicos de agua \(\boldsymbol{y}\) que tiene la piscina para esa altura. Nos preguntamos cuál de las expresiones siguientes corresponde a la fórmula de f.</p>
+<table border="1" align="left"></table></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mwur7zs3-vphx3su65">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mwur7zs3-vphx3su65" style="display:none;">
+                      <button  id="frmStartGame-idevice-mwur7zs3-vphx3su65" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mwur7zs3-vphx3su65" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mwur7zs3-vphx3su65" > </div>
+                        <div id="frmCover-idevice-mwur7zs3-vphx3su65" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mwur7zs3-vphx3su65" class="form-results-container inline">
+                        <div id="form-score-idevice-mwur7zs3-vphx3su65" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mwur7zs3-vphx3su65" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mwur7zs3-vphx3su65" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mwur7zs3-vphx3su65" />
+                        <input id="form-button-reset-idevice-mwur7zs3-vphx3su65" type="button" value="Reiniciar"
+                            data-id="idevice-mwur7zs3-vphx3su65" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mwur7zs3-vphx3su65" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mwur7zs3-vphx3su65" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                <div class="form-instructions"><p>💡 Sustituye valores de \(x\) en la expresión, y comprueba si coinciden con los valores de \(y\) que van apareciendo en la escena.</p>
+<p>Por ejemplo, para \(x=1 \implies y=50\), es decir \(f(1)=50\).</p></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/3-funcion.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/32-dominio-y-recorrido.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
